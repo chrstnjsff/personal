@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { MapPin, Mail, Linkedin, Github } from "lucide-react";
 
 export function Hero() {
@@ -6,8 +7,15 @@ export function Hero() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row items-center gap-8">
           {/* Profile Image */}
-          <div className="w-40 h-40 md:w-48 md:h-48 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white text-5xl font-bold shadow-xl">
-            CJA
+          <div className="w-40 h-40 md:w-48 md:h-48 rounded-2xl overflow-hidden shadow-xl border-4 border-white dark:border-gray-700">
+            <Image
+              src="/personal/profile.png"
+              alt="Christian Josef Aquino"
+              width={192}
+              height={192}
+              className="w-full h-full object-cover"
+              priority
+            />
           </div>
 
           {/* Info */}
@@ -33,7 +41,7 @@ export function Hero() {
                 Send Email
               </a>
               <a
-                href="https://linkedin.com/in/chrstnjsff"
+                href="https://www.linkedin.com/in/cjosefaquino/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 rounded-lg font-medium hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"

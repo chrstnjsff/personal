@@ -53,7 +53,7 @@ const experiences = [
 
 export function Experience() {
   return (
-    <section id="experience" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900/50">
+    <section id="experience" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-[#0a0a0a]">
       <div className="max-w-6xl mx-auto">
         <h2 className="flex items-center gap-3 text-3xl font-bold text-gray-900 dark:text-white mb-12">
           <Briefcase className="w-8 h-8" />
@@ -64,7 +64,7 @@ export function Experience() {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-gray-800 rounded-2xl p-8 border border-gray-200 dark:border-gray-700 shadow-sm"
+              className="bg-white dark:bg-[#1a1a1a] rounded-2xl p-8 border border-gray-200 dark:border-[#2a2a2a] shadow-sm"
             >
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                 <div>

@@ -3,11 +3,17 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --card-bg: #ffffff;
+  --card-border: #e5e7eb;
+  --muted: #f9fafb;
 }
 
 .dark {
-  --background: #0a0a0a;
+  --background: #0f0f0f;
   --foreground: #ededed;
+  --card-bg: #1a1a1a;
+  --card-border: #2a2a2a;
+  --muted: #141414;
 }
 
 html {
@@ -21,24 +27,56 @@ body {
 }
 
 /* Smooth transitions for theme switching */
-* {
-  transition: background-color 0.2s ease, border-color 0.2s ease;
+*,
+*::before,
+*::after {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: ease-in-out;
+  transition-duration: 150ms;
 }
 
-/* Custom scrollbar for dark mode */
-.dark ::-webkit-scrollbar {
+/* Disable transitions on page load */
+.no-transitions * {
+  transition: none !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
   width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
 
 .dark ::-webkit-scrollbar-track {
   background: #1f2937;
 }
 
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
 .dark ::-webkit-scrollbar-thumb {
   background: #4b5563;
-  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
 }
 
 .dark ::-webkit-scrollbar-thumb:hover {
   background: #6b7280;
+}
+
+/* Card styles for consistent look */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+}
+
+/* Section backgrounds */
+.section-alt {
+  background: var(--muted);
 }

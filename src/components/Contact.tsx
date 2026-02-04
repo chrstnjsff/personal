@@ -2,9 +2,9 @@ import { Mail, Linkedin, Github, Phone, MessageCircle } from "lucide-react";
 
 export function Contact() {
   return (
-    <section id="contact" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900/50">
+    <section id="contact" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-[#0a0a0a]">
       <div className="max-w-6xl mx-auto">
-        <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 md:p-12 border border-gray-200 dark:border-gray-700 shadow-sm">
+        <div className="bg-white dark:bg-[#1a1a1a] rounded-2xl p-8 md:p-12 border border-gray-200 dark:border-[#2a2a2a] shadow-sm">
           <div className="grid md:grid-cols-2 gap-12">
             {/* Left Column */}
             <div>
@@ -18,7 +18,7 @@ export function Contact() {
 
               <div className="flex gap-4">
                 <a
-                  href="https://linkedin.com/in/chrstnjsff"
+                  href="https://www.linkedin.com/in/cjosefaquino/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 flex items-center justify-center rounded-lg border border-gray-200 dark:border-gray-600 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
@@ -77,7 +77,7 @@ export function Contact() {
               </a>
 
               <a
-                href="https://linkedin.com/in/chrstnjsff"
+                href="https://www.linkedin.com/in/cjosefaquino/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 rounded-xl border border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-colors"
