@@ -27,7 +27,7 @@ export function BeyondTheScreen() {
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
-        <div className="bg-white dark:bg-[#1a1a1a] rounded-2xl p-8 border border-gray-200 dark:border-[#2a2a2a] shadow-sm">
+        <div className="bg-white dark:bg-[#1a1a1a] rounded-2xl p-8 border border-gray-100 dark:border-[#2a2a2a] shadow-sm">
           <h2 className="flex items-center gap-3 text-2xl font-bold text-gray-900 dark:text-white mb-6">
             <Heart className="w-6 h-6 text-red-500" />
             Beyond the Screen

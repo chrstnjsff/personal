@@ -46,7 +46,7 @@ export function Skills() {
           {skillCategories.map((category, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-[#1a1a1a] rounded-2xl p-6 border border-gray-200 dark:border-[#2a2a2a] shadow-sm"
+              className="bg-white dark:bg-[#1a1a1a] rounded-2xl p-6 border border-gray-100 dark:border-[#2a2a2a] shadow-sm hover:shadow-md transition-shadow"
             >
               <h3 className="flex items-center gap-2 text-lg font-semibold text-gray-900 dark:text-white mb-4">
                 <category.icon className="w-5 h-5 text-blue-500" />

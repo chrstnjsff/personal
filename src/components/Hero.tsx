@@ -7,7 +7,7 @@ export function Hero() {
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row items-center gap-8">
           {/* Profile Image */}
-          <div className="w-40 h-40 md:w-48 md:h-48 rounded-2xl overflow-hidden shadow-xl border-4 border-white dark:border-gray-700">
+          <div className="w-40 h-40 md:w-48 md:h-48 rounded-2xl overflow-hidden shadow-xl border-4 border-gray-200 dark:border-gray-700">
             <Image
               src="/personal/profile.png"
               alt="Christian Josef Aquino"

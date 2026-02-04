@@ -2,9 +2,9 @@ import { Mail, Linkedin, Github, Phone, MessageCircle } from "lucide-react";
 
 export function Contact() {
   return (
-    <section id="contact" className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-[#0a0a0a]">
+    <section id="contact" className="py-16 px-4 sm:px-6 lg:px-8 bg-[#fafafa] dark:bg-[#0a0a0a]">
       <div className="max-w-6xl mx-auto">
-        <div className="bg-white dark:bg-[#1a1a1a] rounded-2xl p-8 md:p-12 border border-gray-200 dark:border-[#2a2a2a] shadow-sm">
+        <div className="bg-white dark:bg-[#1a1a1a] rounded-2xl p-8 md:p-12 border border-gray-100 dark:border-[#2a2a2a] shadow-sm">
           <div className="grid md:grid-cols-2 gap-12">
             {/* Left Column */}
             <div>

@@ -5,7 +5,7 @@ export function About() {
     <section id="about" className="py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
         {/* About Me */}
-        <div className="bg-white dark:bg-[#1a1a1a] rounded-2xl p-8 border border-gray-200 dark:border-[#2a2a2a] shadow-sm">
+        <div className="bg-white dark:bg-[#1a1a1a] rounded-2xl p-8 border border-gray-100 dark:border-[#2a2a2a] shadow-sm hover:shadow-md transition-shadow">
           <h2 className="flex items-center gap-3 text-2xl font-bold text-gray-900 dark:text-white mb-6">
             <User className="w-6 h-6" />
             About Me
@@ -24,7 +24,7 @@ export function About() {
         </div>
 
         {/* Education */}
-        <div className="bg-white dark:bg-[#1a1a1a] rounded-2xl p-8 border border-gray-200 dark:border-[#2a2a2a] shadow-sm">
+        <div className="bg-white dark:bg-[#1a1a1a] rounded-2xl p-8 border border-gray-100 dark:border-[#2a2a2a] shadow-sm hover:shadow-md transition-shadow">
           <h2 className="flex items-center gap-3 text-2xl font-bold text-gray-900 dark:text-white mb-6">
             <GraduationCap className="w-6 h-6" />
             Education
