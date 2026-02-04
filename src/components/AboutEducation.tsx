@@ -1,4 +1,5 @@
 import { User, GraduationCap, Wrench, Award, Heart, Briefcase, Mail, Linkedin, Github, MessageCircle, Quote, FolderGit2 } from "lucide-react";
+import { PhotoSlider } from "./PhotoSlider";
 
 const projects = [
   {
@@ -60,7 +61,7 @@ export function AboutEducation() {
       <div className="max-w-5xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-5">
           {/* Left Column */}
-          <div className="space-y-5">
+          <div className="flex flex-col gap-5">
             {/* About Me */}
             <div className="bg-white dark:bg-[#1c1c1c] rounded-xl p-5 border border-gray-200 dark:border-[#2d2d2d]">
               <h2 className="flex items-center gap-2 text-base font-semibold text-gray-900 dark:text-white mb-3">
@@ -129,7 +130,7 @@ export function AboutEducation() {
             </div>
 
             {/* Beyond the Screen */}
-            <div className="bg-white dark:bg-[#1c1c1c] rounded-xl p-5 border border-gray-200 dark:border-[#2d2d2d]">
+            <div className="bg-white dark:bg-[#1c1c1c] rounded-xl p-5 border border-gray-200 dark:border-[#2d2d2d] flex-1">
               <h2 className="flex items-center gap-2 text-base font-semibold text-gray-900 dark:text-white mb-3">
                 <Heart className="w-4 h-4 text-red-500" />
                 Beyond the Screen
@@ -145,6 +146,7 @@ export function AboutEducation() {
                   </div>
                 ))}
               </div>
+              <PhotoSlider />
             </div>
           </div>
 
