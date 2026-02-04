@@ -1,4 +1,25 @@
-import { User, GraduationCap, Wrench, Award, Heart, Briefcase, Mail, Linkedin, Github, MessageCircle, Quote } from "lucide-react";
+import { User, GraduationCap, Wrench, Award, Heart, Briefcase, Mail, Linkedin, Github, MessageCircle, Quote, FolderGit2 } from "lucide-react";
+
+const projects = [
+  {
+    title: "Tech Radar Visualization",
+    description: "Built a Tech Radar platform for MRGE on Kubernetes with end-to-end CI/CD, enabling engineering teams to track and standardize technology adoption decisions.",
+    tags: ["Kubernetes", "ArgoCD", "React"],
+    type: "Work",
+  },
+  {
+    title: "Aircraft Parts QR Scanner",
+    description: "A web application for aircraft mechanics that displays detailed aircraft parts information when scanning QR codes, improving maintenance workflow efficiency.",
+    tags: ["Web App", "QR Code", "Aviation"],
+    type: "Personal",
+  },
+  {
+    title: "Terraform AWS Modules",
+    description: "Personal collection of reusable Terraform modules for deploying AWS CUDOS Dashboard and Amazon EKS clusters with best practices baked in.",
+    tags: ["Terraform", "AWS", "EKS", "CUDOS"],
+    type: "Personal",
+  },
+];
 
 const recommendations = [
   {
@@ -147,6 +168,34 @@ export function AboutEducation() {
                         <p className="text-xs text-gray-500 dark:text-gray-500">{exp.company}</p>
                       </div>
                       <p className="text-xs text-gray-400 dark:text-gray-500 whitespace-nowrap">{exp.period}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Projects */}
+            <div className="bg-white dark:bg-[#1c1c1c] rounded-xl p-5 border border-gray-200 dark:border-[#2d2d2d]">
+              <h2 className="flex items-center gap-2 text-base font-semibold text-gray-900 dark:text-white mb-4">
+                <FolderGit2 className="w-4 h-4" />
+                Projects
+              </h2>
+              <div className="space-y-3">
+                {projects.map((project, index) => (
+                  <div key={index} className="p-4 rounded-lg bg-gray-50 dark:bg-[#252525]">
+                    <div className="flex items-start justify-between gap-2 mb-2">
+                      <h3 className="text-sm font-semibold text-gray-900 dark:text-white">{project.title}</h3>
+                      <span className={`text-[10px] px-2 py-0.5 rounded-full ${project.type === 'Work' ? 'bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400' : 'bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400'}`}>
+                        {project.type}
+                      </span>
+                    </div>
+                    <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed mb-2">{project.description}</p>
+                    <div className="flex flex-wrap gap-1">
+                      {project.tags.map((tag, i) => (
+                        <span key={i} className="px-2 py-0.5 text-[10px] bg-gray-200 dark:bg-[#333] text-gray-600 dark:text-gray-400 rounded">
+                          {tag}
+                        </span>
+                      ))}
                     </div>
                   </div>
                 ))}
