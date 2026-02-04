@@ -1,6 +1,12 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import "./globals.css";
+
+const inter = Inter({ 
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Christian Josef Aquino | Cloud & DevOps Engineer",
@@ -20,8 +26,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className="antialiased bg-white dark:bg-[#0f0f0f] text-gray-900 dark:text-gray-100">
+    <html lang="en" suppressHydrationWarning className={inter.className}>
+      <body className="antialiased bg-[#FAF9F6] dark:bg-[#0f0f0f] text-gray-900 dark:text-gray-100">
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

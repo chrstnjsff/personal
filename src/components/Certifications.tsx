@@ -4,43 +4,38 @@ const certifications = [
   {
     name: "AWS Certified Cloud Practitioner",
     issuer: "Amazon Web Services",
-    badge: "AWS",
   },
   {
     name: "HashiCorp Certified: Terraform Associate (003)",
     issuer: "HashiCorp",
-    badge: "TF",
   },
 ];
 
 export function Certifications() {
   return (
-    <section id="certifications" className="py-16 px-4 sm:px-6 lg:px-8 bg-[#fafafa] dark:bg-[#0a0a0a]">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="flex items-center gap-3 text-3xl font-bold text-gray-900 dark:text-white mb-12">
-          <Award className="w-8 h-8" />
-          Certifications
-        </h2>
+    <section id="certifications" className="py-8 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-5xl mx-auto">
+        <div className="bg-white dark:bg-[#1a1a1a] rounded-xl p-6 border border-gray-200 dark:border-[#2a2a2a]">
+          <h2 className="flex items-center gap-2 text-lg font-semibold text-gray-900 dark:text-white mb-4">
+            <Award className="w-5 h-5" />
+            Certifications
+          </h2>
 
-        <div className="grid md:grid-cols-2 gap-6">
-          {certifications.map((cert, index) => (
-            <div
-              key={index}
-              className="bg-white dark:bg-[#1a1a1a] rounded-2xl p-6 border border-gray-100 dark:border-[#2a2a2a] shadow-sm hover:shadow-md transition-shadow flex items-center gap-6"
-            >
-              <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-orange-500 to-yellow-500 flex items-center justify-center text-white font-bold text-lg flex-shrink-0">
-                {cert.badge}
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+          <div className="space-y-3">
+            {certifications.map((cert, index) => (
+              <div
+                key={index}
+                className="p-3 rounded-lg bg-gray-50 dark:bg-[#222]"
+              >
+                <h3 className="text-sm font-medium text-gray-900 dark:text-white">
                   {cert.name}
                 </h3>
-                <p className="text-gray-500 dark:text-gray-400">
+                <p className="text-xs text-gray-500 dark:text-gray-400">
                   {cert.issuer}
                 </p>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
