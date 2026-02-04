@@ -10,14 +10,9 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Christian Josef Aquino | Cloud & DevOps Engineer",
-  description: "Cloud & DevOps Engineer specializing in Kubernetes, AWS, Platform Engineering, and Infrastructure as Code. Building scalable, automated solutions.",
+  description: "Cloud & DevOps Engineer specializing in Kubernetes, AWS, Platform Engineering, and Infrastructure as Code.",
   keywords: ["Cloud Engineer", "DevOps", "Kubernetes", "AWS", "Terraform", "Platform Engineering"],
   authors: [{ name: "Christian Josef Aquino" }],
-  openGraph: {
-    title: "Christian Josef Aquino | Cloud & DevOps Engineer",
-    description: "Cloud & DevOps Engineer specializing in Kubernetes, AWS, and Platform Engineering.",
-    type: "website",
-  },
 };
 
 export default function RootLayout({
@@ -27,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className={inter.className}>
-      <body className="antialiased bg-[#FAF9F6] dark:bg-[#0f0f0f] text-gray-900 dark:text-gray-100">
+      <body className="antialiased bg-[#FAFAFA] dark:bg-[#121212] text-gray-900 dark:text-gray-100 min-h-screen">
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
