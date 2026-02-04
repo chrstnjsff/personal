@@ -1,4 +1,12 @@
-import { User, GraduationCap, Wrench, Award, Heart, Briefcase, Mail, Linkedin, Github, MessageCircle } from "lucide-react";
+import { User, GraduationCap, Wrench, Award, Heart, Briefcase, Mail, Linkedin, Github, MessageCircle, Quote } from "lucide-react";
+
+const recommendations = [
+  {
+    quote: "CJ is a fast learner and easy to work with. Even I am a senior to him, he also helped me with difficulties at work. He is very cooperative and hardworking.",
+    author: "Danica Capistrano",
+    role: "Support Analyst 2 at Koerber Supply Chain Software",
+  },
+];
 
 const experiences = [
   { title: "Cloud & DevOps Engineer", company: "One Team Anywhere (MRGE)", period: "2024 - Present", current: true },
@@ -139,6 +147,27 @@ export function AboutEducation() {
                         <p className="text-xs text-gray-500 dark:text-gray-500">{exp.company}</p>
                       </div>
                       <p className="text-xs text-gray-400 dark:text-gray-500 whitespace-nowrap">{exp.period}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Recommendations */}
+            <div className="bg-white dark:bg-[#1c1c1c] rounded-xl p-5 border border-gray-200 dark:border-[#2d2d2d]">
+              <h2 className="flex items-center gap-2 text-base font-semibold text-gray-900 dark:text-white mb-4">
+                <Quote className="w-4 h-4" />
+                Recommendations
+              </h2>
+              <div className="space-y-3">
+                {recommendations.map((rec, index) => (
+                  <div key={index} className="p-4 rounded-lg bg-gray-50 dark:bg-[#252525] border-l-2 border-blue-500">
+                    <p className="text-sm text-gray-600 dark:text-gray-300 italic leading-relaxed mb-3">
+                      &ldquo;{rec.quote}&rdquo;
+                    </p>
+                    <div>
+                      <p className="text-sm font-medium text-gray-900 dark:text-white">— {rec.author}</p>
+                      <p className="text-xs text-gray-500 dark:text-gray-500">{rec.role}</p>
                     </div>
                   </div>
                 ))}
