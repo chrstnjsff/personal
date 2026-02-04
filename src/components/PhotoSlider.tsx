@@ -21,7 +21,7 @@ export function PhotoSlider() {
 
   return (
     <div className="mt-4">
-      <div className="relative w-full h-40 rounded-lg overflow-hidden">
+      <div className="relative w-full h-56 rounded-lg overflow-hidden">
         {photos.map((photo, index) => (
           <div
             key={index}
