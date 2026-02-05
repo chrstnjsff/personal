@@ -28,7 +28,7 @@ export function Hero() {
               Mandaluyong City, Metro Manila, Philippines
             </p>
             <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
-              Experienced DevOps Engineer | AWS, Terraform & Kubernetes | Platform Engineering
+              Experienced DevOps Engineer | Platform Engineering
             </p>
 
             {/* Action Buttons */}
